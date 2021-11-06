@@ -14,6 +14,7 @@ np.random.seed(1)
 
 synaptic_weights = 2 * np.random.random((3,1)) - 1
 
+#Backpropogation
 for i in range (10000):
     
     inputs = training_inputs
@@ -25,7 +26,4 @@ for i in range (10000):
 
     synaptic_weights += adjustement
 
-new_situation = np.array([1,0,1])
-output = np.dot(new_situation,synaptic_weights)
-
-print(output)
+print(outputs)
